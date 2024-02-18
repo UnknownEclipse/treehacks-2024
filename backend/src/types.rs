@@ -41,9 +41,13 @@ pub struct GroupResponse {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct UserInboxEntry {
     pub group: GroupId,
+    pub group_name: String,
     pub title: String,
     pub body: String,
     pub viewed: bool,
+    pub sender: String,
+    pub time: String,
+    pub subject: String,
     pub announcement: AnnouncementId,
 }
 

@@ -24,7 +24,10 @@ CREATE TABLE events (
 CREATE TABLE announcements (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     group_id REFERENCES groups(id),
+    sender TEXT NOT NULL,
+    time TEXT NOT NULL,
     title TEXT NOT NULL,
+    subject TEXT NOT NULL,
     body TEXT NOT NULL
 );
 
